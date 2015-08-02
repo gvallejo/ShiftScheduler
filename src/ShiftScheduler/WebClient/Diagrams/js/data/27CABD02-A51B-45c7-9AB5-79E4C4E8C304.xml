@@ -1,0 +1,11 @@
+tocTab[tocTab.length] = new Array("0.9:1", "", "Scheduling", "EARoot/EA9/EA122.htm", "3.png", "16", "0", "", "Logical diagram0","{2771965F-B22B-47e5-9A75-7E3A0C2543F5}");
+tocTab[tocTab.length] = new Array("0.9:2", "", "«entity» BruteForceAlgorithm", "EARoot/EA9/EA125.htm", "5.png", "E66", "0", "", "Class0","{885D0A2D-4F42-468a-AF3A-99EF163C9D7A}");
+tocTab[tocTab.length] = new Array("0.9:3", "", "«entity» DummyAlgorithm", "EARoot/EA9/EA126.htm", "5.png", "E70", "0", "", "Class0","{FD5FB638-7E0F-4477-AB07-FA3C66F13172}");
+tocTab[tocTab.length] = new Array("0.9:4", "", "IScheduler", "EARoot/EA9/EA127.htm", "8.png", "E71", "0", "", "Interface0","{3F482ACB-59B3-4c7d-A098-F2A06D075CE0}");
+tocTab[tocTab.length] = new Array("0.9:5", "", "ISchedulingAlgorithm", "EARoot/EA9/EA128.htm", "8.png", "E72", "0", "", "Interface0","{40D9C2F1-D340-48e1-9AE2-084301CB116B}");
+tocTab[tocTab.length] = new Array("0.9:6", "", "ISchedulingAlgorithmFactory", "EARoot/EA9/EA129.htm", "8.png", "E73", "0", "", "Interface0","{5DEC1B37-AABA-43cc-82A7-0CB7F47AE1A6}");
+tocTab[tocTab.length] = new Array("0.9:7", "", "JsonDay", "EARoot/EA9/EA130.htm", "5.png", "E68", "0", "", "Class0","{50B29BA6-B443-4405-BC2F-D8D80DE8D355}");
+tocTab[tocTab.length] = new Array("0.9:8", "", "JsonWeek", "EARoot/EA9/EA131.htm", "5.png", "E69", "0", "", "Class0","{C336A2BC-B375-4358-AAEF-79BE8C0C9DB0}");
+tocTab[tocTab.length] = new Array("0.9:9", "", "Scheduler", "EARoot/EA9/EA132.htm", "5.png", "E74", "0", "", "Class0","{57F28D38-9204-4dfb-86B1-9116BFBEB8FA}");
+tocTab[tocTab.length] = new Array("0.9:10", "", "SchedulingAlgorithmFactory", "EARoot/EA9/EA133.htm", "5.png", "E75", "0", "", "Class0","{0D2AFC01-7F4F-484f-BD57-2E3D0B4704E9}");
+tocTab[tocTab.length] = new Array("0.9:11", "", "ShiftScheduleMock", "EARoot/EA9/EA134.htm", "5.png", "E67", "0", "", "Class0","{54E0F272-882C-4ed6-AB18-821AFA0DF278}");

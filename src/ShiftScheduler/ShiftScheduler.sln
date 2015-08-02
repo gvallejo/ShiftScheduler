@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scheduler.Core", "Scheduler.Core\Scheduler.Core.csproj", "{F5D2F892-AED0-4658-86CF-9B000604EEFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scheduler.IntegrationTests", "Scheduler.IntegrationTests\Scheduler.IntegrationTests.csproj", "{0CCCF507-81F6-424A-AE95-AABC9A628A98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scheduler.UnitTests", "Scheduler.UnitTests\Scheduler.UnitTests.csproj", "{89308293-CC66-4026-B485-FFDD27AD7FB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebClient", "WebClient\WebClient.csproj", "{CF74D4C8-505D-45F9-B6EC-B3460FE44B8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoC", "IoC\IoC.csproj", "{20117997-EBA2-4AC7-8514-254C2A01251A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC.Web.Client", "MVC.Web.Client\MVC.Web.Client.csproj", "{48DAF871-7A8C-45FB-8E1F-4BC25C84606B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5D2F892-AED0-4658-86CF-9B000604EEFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5D2F892-AED0-4658-86CF-9B000604EEFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5D2F892-AED0-4658-86CF-9B000604EEFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5D2F892-AED0-4658-86CF-9B000604EEFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CCCF507-81F6-424A-AE95-AABC9A628A98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CCCF507-81F6-424A-AE95-AABC9A628A98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CCCF507-81F6-424A-AE95-AABC9A628A98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CCCF507-81F6-424A-AE95-AABC9A628A98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89308293-CC66-4026-B485-FFDD27AD7FB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89308293-CC66-4026-B485-FFDD27AD7FB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89308293-CC66-4026-B485-FFDD27AD7FB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89308293-CC66-4026-B485-FFDD27AD7FB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF74D4C8-505D-45F9-B6EC-B3460FE44B8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF74D4C8-505D-45F9-B6EC-B3460FE44B8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF74D4C8-505D-45F9-B6EC-B3460FE44B8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF74D4C8-505D-45F9-B6EC-B3460FE44B8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20117997-EBA2-4AC7-8514-254C2A01251A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20117997-EBA2-4AC7-8514-254C2A01251A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20117997-EBA2-4AC7-8514-254C2A01251A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20117997-EBA2-4AC7-8514-254C2A01251A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48DAF871-7A8C-45FB-8E1F-4BC25C84606B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48DAF871-7A8C-45FB-8E1F-4BC25C84606B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48DAF871-7A8C-45FB-8E1F-4BC25C84606B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48DAF871-7A8C-45FB-8E1F-4BC25C84606B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

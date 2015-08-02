@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("0.2:1", "", "Config", "EARoot/EA2/EA56.htm", "3.png", "5", "0", "", "Logical diagram0","{9A473C6E-192D-4352-BF92-90CB28D70731}");
+tocTab[tocTab.length] = new Array("0.2:2", "", "RuleIdMapItem", "EARoot/EA2/EA59.htm", "5.png", "E26", "0", "", "Class0","{BC28ED20-A935-4a91-B5CB-AA0F1FA15406}");
+tocTab[tocTab.length] = new Array("0.2:3", "", "RuleIdToRuleScopeMapper", "EARoot/EA2/EA60.htm", "5.png", "E27", "0", "", "Class0","{3DFD7EA6-3BE1-4f4f-AA5F-DB2C31AB49BF}");
+tocTab[tocTab.length] = new Array("0.2:4", "", "RuleIdToRuleTypeMapper", "EARoot/EA2/EA61.htm", "5.png", "E28", "0", "", "Class0","{41070AC5-070D-43cb-851B-1D4CE088D9DC}");

@@ -1,0 +1,834 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CF74D4C8-505D-45F9-B6EC-B3460FE44B8E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebClient</RootNamespace>
+    <AssemblyName>WebClient</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.SpellChecker.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Spreadsheet.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Web.ASPxGauges.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Web.ASPxHtmlEditor.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Web.ASPxPivotGrid.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Web.ASPxScheduler.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Web.ASPxSpellChecker.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Web.ASPxSpreadsheet.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Web.ASPxThemes.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Web.ASPxTreeList.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Web.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v14.1.Web, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v14.1.Presets, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPivotGrid.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v14.1.Web, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Gurock.SmartInspect, Version=3.3.6.143, Culture=neutral, PublicKeyToken=a78b0a9303ab7a7c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\libs\SmartInspect\Gurock.SmartInspect.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Ninject">
+      <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Images\1.jpg" />
+    <Content Include="Content\Images\2.jpg" />
+    <Content Include="Content\Images\3.jpg" />
+    <Content Include="Content\Images\4.jpg" />
+    <Content Include="Content\Images\5.jpg" />
+    <Content Include="Content\Images\AquaHeader.jpg" />
+    <Content Include="Content\Images\BlackGlassHeader.jpg" />
+    <Content Include="Content\Images\GlassHeader.jpg" />
+    <Content Include="Content\Images\PlasticBlueHeader.jpg" />
+    <Content Include="Content\Images\RedWineHeader.jpg" />
+    <Content Include="Content\Images\unknownUser.png" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Diagrams.aspx" />
+    <Content Include="Diagrams\blank.htm" />
+    <Content Include="Diagrams\css\ea.css" />
+    <Content Include="Diagrams\css\eacont.css" />
+    <Content Include="Diagrams\EARoot\EA1.htm" />
+    <Content Include="Diagrams\EARoot\EA10.htm" />
+    <Content Include="Diagrams\EARoot\EA10\EA135.htm" />
+    <Content Include="Diagrams\EARoot\EA10\EA136.png" />
+    <Content Include="Diagrams\EARoot\EA10\EA137.htm" />
+    <Content Include="Diagrams\EARoot\EA10\EA138.htm" />
+    <Content Include="Diagrams\EARoot\EA10\EA139.htm" />
+    <Content Include="Diagrams\EARoot\EA10\EA140.htm" />
+    <Content Include="Diagrams\EARoot\EA10\EA141.htm" />
+    <Content Include="Diagrams\EARoot\EA10\EA142.htm" />
+    <Content Include="Diagrams\EARoot\EA11.htm" />
+    <Content Include="Diagrams\EARoot\EA12.htm" />
+    <Content Include="Diagrams\EARoot\EA13.htm" />
+    <Content Include="Diagrams\EARoot\EA14.htm" />
+    <Content Include="Diagrams\EARoot\EA15.htm" />
+    <Content Include="Diagrams\EARoot\EA16.htm" />
+    <Content Include="Diagrams\EARoot\EA17.htm" />
+    <Content Include="Diagrams\EARoot\EA18.htm" />
+    <Content Include="Diagrams\EARoot\EA19.htm" />
+    <Content Include="Diagrams\EARoot\EA1\EA1\EA40.htm" />
+    <Content Include="Diagrams\EARoot\EA1\EA1\EA41.png" />
+    <Content Include="Diagrams\EARoot\EA1\EA1\EA42.htm" />
+    <Content Include="Diagrams\EARoot\EA1\EA1\EA43.htm" />
+    <Content Include="Diagrams\EARoot\EA1\EA1\EA44.htm" />
+    <Content Include="Diagrams\EARoot\EA1\EA1\EA45.htm" />
+    <Content Include="Diagrams\EARoot\EA1\EA1\EA46.htm" />
+    <Content Include="Diagrams\EARoot\EA1\EA1\EA47.htm" />
+    <Content Include="Diagrams\EARoot\EA1\EA1\EA48.htm" />
+    <Content Include="Diagrams\EARoot\EA1\EA24.htm" />
+    <Content Include="Diagrams\EARoot\EA1\EA25.png" />
+    <Content Include="Diagrams\EARoot\EA1\EA26.htm" />
+    <Content Include="Diagrams\EARoot\EA1\EA27.htm" />
+    <Content Include="Diagrams\EARoot\EA1\EA28.htm" />
+    <Content Include="Diagrams\EARoot\EA1\EA29.htm" />
+    <Content Include="Diagrams\EARoot\EA1\EA2\EA49.htm" />
+    <Content Include="Diagrams\EARoot\EA1\EA2\EA50.png" />
+    <Content Include="Diagrams\EARoot\EA1\EA2\EA51.htm" />
+    <Content Include="Diagrams\EARoot\EA1\EA2\EA52.htm" />
+    <Content Include="Diagrams\EARoot\EA1\EA2\EA53.htm" />
+    <Content Include="Diagrams\EARoot\EA1\EA2\EA54.htm" />
+    <Content Include="Diagrams\EARoot\EA1\EA2\EA55.htm" />
+    <Content Include="Diagrams\EARoot\EA1\EA30.htm" />
+    <Content Include="Diagrams\EARoot\EA1\EA31.htm" />
+    <Content Include="Diagrams\EARoot\EA1\EA32.htm" />
+    <Content Include="Diagrams\EARoot\EA1\EA33.htm" />
+    <Content Include="Diagrams\EARoot\EA1\EA34.htm" />
+    <Content Include="Diagrams\EARoot\EA1\EA35.htm" />
+    <Content Include="Diagrams\EARoot\EA1\EA36.htm" />
+    <Content Include="Diagrams\EARoot\EA1\EA37.htm" />
+    <Content Include="Diagrams\EARoot\EA1\EA38.htm" />
+    <Content Include="Diagrams\EARoot\EA1\EA39.htm" />
+    <Content Include="Diagrams\EARoot\EA2.png" />
+    <Content Include="Diagrams\EARoot\EA20.htm" />
+    <Content Include="Diagrams\EARoot\EA21.htm" />
+    <Content Include="Diagrams\EARoot\EA22.htm" />
+    <Content Include="Diagrams\EARoot\EA23.htm" />
+    <Content Include="Diagrams\EARoot\EA2\EA56.htm" />
+    <Content Include="Diagrams\EARoot\EA2\EA57.png" />
+    <Content Include="Diagrams\EARoot\EA2\EA58.htm" />
+    <Content Include="Diagrams\EARoot\EA2\EA59.htm" />
+    <Content Include="Diagrams\EARoot\EA2\EA60.htm" />
+    <Content Include="Diagrams\EARoot\EA2\EA61.htm" />
+    <Content Include="Diagrams\EARoot\EA3.htm" />
+    <Content Include="Diagrams\EARoot\EA3\EA1\EA68.htm" />
+    <Content Include="Diagrams\EARoot\EA3\EA1\EA69.png" />
+    <Content Include="Diagrams\EARoot\EA3\EA1\EA70.htm" />
+    <Content Include="Diagrams\EARoot\EA3\EA1\EA71.htm" />
+    <Content Include="Diagrams\EARoot\EA3\EA1\EA72.htm" />
+    <Content Include="Diagrams\EARoot\EA3\EA1\EA73.htm" />
+    <Content Include="Diagrams\EARoot\EA3\EA1\EA74.htm" />
+    <Content Include="Diagrams\EARoot\EA3\EA1\EA75.htm" />
+    <Content Include="Diagrams\EARoot\EA3\EA2\EA76.htm" />
+    <Content Include="Diagrams\EARoot\EA3\EA2\EA77.png" />
+    <Content Include="Diagrams\EARoot\EA3\EA2\EA78.htm" />
+    <Content Include="Diagrams\EARoot\EA3\EA2\EA79.htm" />
+    <Content Include="Diagrams\EARoot\EA3\EA62.htm" />
+    <Content Include="Diagrams\EARoot\EA3\EA63.png" />
+    <Content Include="Diagrams\EARoot\EA3\EA64.htm" />
+    <Content Include="Diagrams\EARoot\EA3\EA65.htm" />
+    <Content Include="Diagrams\EARoot\EA3\EA66.htm" />
+    <Content Include="Diagrams\EARoot\EA3\EA67.htm" />
+    <Content Include="Diagrams\EARoot\EA4.htm" />
+    <Content Include="Diagrams\EARoot\EA4\EA1\EA100.htm" />
+    <Content Include="Diagrams\EARoot\EA4\EA1\EA101.htm" />
+    <Content Include="Diagrams\EARoot\EA4\EA1\EA102.htm" />
+    <Content Include="Diagrams\EARoot\EA4\EA1\EA92.htm" />
+    <Content Include="Diagrams\EARoot\EA4\EA1\EA93.png" />
+    <Content Include="Diagrams\EARoot\EA4\EA1\EA94.htm" />
+    <Content Include="Diagrams\EARoot\EA4\EA1\EA95.htm" />
+    <Content Include="Diagrams\EARoot\EA4\EA1\EA96.htm" />
+    <Content Include="Diagrams\EARoot\EA4\EA1\EA97.htm" />
+    <Content Include="Diagrams\EARoot\EA4\EA1\EA98.htm" />
+    <Content Include="Diagrams\EARoot\EA4\EA1\EA99.htm" />
+    <Content Include="Diagrams\EARoot\EA4\EA80.htm" />
+    <Content Include="Diagrams\EARoot\EA4\EA81.png" />
+    <Content Include="Diagrams\EARoot\EA4\EA82.htm" />
+    <Content Include="Diagrams\EARoot\EA4\EA83.htm" />
+    <Content Include="Diagrams\EARoot\EA4\EA84.htm" />
+    <Content Include="Diagrams\EARoot\EA4\EA85.htm" />
+    <Content Include="Diagrams\EARoot\EA4\EA86.htm" />
+    <Content Include="Diagrams\EARoot\EA4\EA87.htm" />
+    <Content Include="Diagrams\EARoot\EA4\EA88.htm" />
+    <Content Include="Diagrams\EARoot\EA4\EA89.htm" />
+    <Content Include="Diagrams\EARoot\EA4\EA90.htm" />
+    <Content Include="Diagrams\EARoot\EA4\EA91.htm" />
+    <Content Include="Diagrams\EARoot\EA5.htm" />
+    <Content Include="Diagrams\EARoot\EA5\EA103.htm" />
+    <Content Include="Diagrams\EARoot\EA5\EA104.png" />
+    <Content Include="Diagrams\EARoot\EA5\EA105.htm" />
+    <Content Include="Diagrams\EARoot\EA5\EA106.htm" />
+    <Content Include="Diagrams\EARoot\EA6.htm" />
+    <Content Include="Diagrams\EARoot\EA6\EA107.htm" />
+    <Content Include="Diagrams\EARoot\EA6\EA108.png" />
+    <Content Include="Diagrams\EARoot\EA6\EA109.htm" />
+    <Content Include="Diagrams\EARoot\EA6\EA110.htm" />
+    <Content Include="Diagrams\EARoot\EA6\EA1\EA111.htm" />
+    <Content Include="Diagrams\EARoot\EA6\EA1\EA112.png" />
+    <Content Include="Diagrams\EARoot\EA6\EA1\EA113.htm" />
+    <Content Include="Diagrams\EARoot\EA7.htm" />
+    <Content Include="Diagrams\EARoot\EA7\EA114.htm" />
+    <Content Include="Diagrams\EARoot\EA7\EA115.png" />
+    <Content Include="Diagrams\EARoot\EA7\EA116.htm" />
+    <Content Include="Diagrams\EARoot\EA7\EA117.htm" />
+    <Content Include="Diagrams\EARoot\EA8.htm" />
+    <Content Include="Diagrams\EARoot\EA8\EA118.htm" />
+    <Content Include="Diagrams\EARoot\EA8\EA119.png" />
+    <Content Include="Diagrams\EARoot\EA8\EA120.htm" />
+    <Content Include="Diagrams\EARoot\EA8\EA121.htm" />
+    <Content Include="Diagrams\EARoot\EA9.htm" />
+    <Content Include="Diagrams\EARoot\EA9\EA122.htm" />
+    <Content Include="Diagrams\EARoot\EA9\EA123.png" />
+    <Content Include="Diagrams\EARoot\EA9\EA124.htm" />
+    <Content Include="Diagrams\EARoot\EA9\EA125.htm" />
+    <Content Include="Diagrams\EARoot\EA9\EA126.htm" />
+    <Content Include="Diagrams\EARoot\EA9\EA127.htm" />
+    <Content Include="Diagrams\EARoot\EA9\EA128.htm" />
+    <Content Include="Diagrams\EARoot\EA9\EA129.htm" />
+    <Content Include="Diagrams\EARoot\EA9\EA130.htm" />
+    <Content Include="Diagrams\EARoot\EA9\EA131.htm" />
+    <Content Include="Diagrams\EARoot\EA9\EA132.htm" />
+    <Content Include="Diagrams\EARoot\EA9\EA133.htm" />
+    <Content Include="Diagrams\EARoot\EA9\EA134.htm" />
+    <Content Include="Diagrams\images\0.png" />
+    <Content Include="Diagrams\images\1.png" />
+    <Content Include="Diagrams\images\10.png" />
+    <Content Include="Diagrams\images\100.png" />
+    <Content Include="Diagrams\images\101.png" />
+    <Content Include="Diagrams\images\102.png" />
+    <Content Include="Diagrams\images\103.png" />
+    <Content Include="Diagrams\images\104.png" />
+    <Content Include="Diagrams\images\105.png" />
+    <Content Include="Diagrams\images\106.png" />
+    <Content Include="Diagrams\images\107.png" />
+    <Content Include="Diagrams\images\108.png" />
+    <Content Include="Diagrams\images\109.png" />
+    <Content Include="Diagrams\images\11.png" />
+    <Content Include="Diagrams\images\110.png" />
+    <Content Include="Diagrams\images\111.png" />
+    <Content Include="Diagrams\images\112.png" />
+    <Content Include="Diagrams\images\113.png" />
+    <Content Include="Diagrams\images\114.png" />
+    <Content Include="Diagrams\images\115.png" />
+    <Content Include="Diagrams\images\116.png" />
+    <Content Include="Diagrams\images\117.png" />
+    <Content Include="Diagrams\images\118.png" />
+    <Content Include="Diagrams\images\119.png" />
+    <Content Include="Diagrams\images\12.png" />
+    <Content Include="Diagrams\images\120.png" />
+    <Content Include="Diagrams\images\121.png" />
+    <Content Include="Diagrams\images\122.png" />
+    <Content Include="Diagrams\images\123.png" />
+    <Content Include="Diagrams\images\124.png" />
+    <Content Include="Diagrams\images\125.png" />
+    <Content Include="Diagrams\images\126.png" />
+    <Content Include="Diagrams\images\127.png" />
+    <Content Include="Diagrams\images\128.png" />
+    <Content Include="Diagrams\images\129.png" />
+    <Content Include="Diagrams\images\13.png" />
+    <Content Include="Diagrams\images\130.png" />
+    <Content Include="Diagrams\images\131.png" />
+    <Content Include="Diagrams\images\132.png" />
+    <Content Include="Diagrams\images\133.png" />
+    <Content Include="Diagrams\images\134.png" />
+    <Content Include="Diagrams\images\135.png" />
+    <Content Include="Diagrams\images\136.png" />
+    <Content Include="Diagrams\images\137.png" />
+    <Content Include="Diagrams\images\138.png" />
+    <Content Include="Diagrams\images\139.png" />
+    <Content Include="Diagrams\images\14.png" />
+    <Content Include="Diagrams\images\140.png" />
+    <Content Include="Diagrams\images\141.png" />
+    <Content Include="Diagrams\images\142.png" />
+    <Content Include="Diagrams\images\143.png" />
+    <Content Include="Diagrams\images\144.png" />
+    <Content Include="Diagrams\images\145.png" />
+    <Content Include="Diagrams\images\146.png" />
+    <Content Include="Diagrams\images\147.png" />
+    <Content Include="Diagrams\images\148.png" />
+    <Content Include="Diagrams\images\149.png" />
+    <Content Include="Diagrams\images\15.png" />
+    <Content Include="Diagrams\images\150.png" />
+    <Content Include="Diagrams\images\151.png" />
+    <Content Include="Diagrams\images\152.png" />
+    <Content Include="Diagrams\images\153.png" />
+    <Content Include="Diagrams\images\154.png" />
+    <Content Include="Diagrams\images\155.png" />
+    <Content Include="Diagrams\images\156.png" />
+    <Content Include="Diagrams\images\157.png" />
+    <Content Include="Diagrams\images\158.png" />
+    <Content Include="Diagrams\images\159.png" />
+    <Content Include="Diagrams\images\16.png" />
+    <Content Include="Diagrams\images\160.png" />
+    <Content Include="Diagrams\images\161.png" />
+    <Content Include="Diagrams\images\162.png" />
+    <Content Include="Diagrams\images\163.png" />
+    <Content Include="Diagrams\images\164.png" />
+    <Content Include="Diagrams\images\165.png" />
+    <Content Include="Diagrams\images\166.png" />
+    <Content Include="Diagrams\images\167.png" />
+    <Content Include="Diagrams\images\168.png" />
+    <Content Include="Diagrams\images\169.png" />
+    <Content Include="Diagrams\images\17.png" />
+    <Content Include="Diagrams\images\170.png" />
+    <Content Include="Diagrams\images\171.png" />
+    <Content Include="Diagrams\images\172.png" />
+    <Content Include="Diagrams\images\173.png" />
+    <Content Include="Diagrams\images\174.png" />
+    <Content Include="Diagrams\images\175.png" />
+    <Content Include="Diagrams\images\176.png" />
+    <Content Include="Diagrams\images\177.png" />
+    <Content Include="Diagrams\images\178.png" />
+    <Content Include="Diagrams\images\179.png" />
+    <Content Include="Diagrams\images\18.png" />
+    <Content Include="Diagrams\images\180.png" />
+    <Content Include="Diagrams\images\181.png" />
+    <Content Include="Diagrams\images\182.png" />
+    <Content Include="Diagrams\images\183.png" />
+    <Content Include="Diagrams\images\184.png" />
+    <Content Include="Diagrams\images\185.png" />
+    <Content Include="Diagrams\images\186.png" />
+    <Content Include="Diagrams\images\187.png" />
+    <Content Include="Diagrams\images\188.png" />
+    <Content Include="Diagrams\images\189.png" />
+    <Content Include="Diagrams\images\19.png" />
+    <Content Include="Diagrams\images\190.png" />
+    <Content Include="Diagrams\images\191.png" />
+    <Content Include="Diagrams\images\192.png" />
+    <Content Include="Diagrams\images\193.png" />
+    <Content Include="Diagrams\images\194.png" />
+    <Content Include="Diagrams\images\195.png" />
+    <Content Include="Diagrams\images\196.png" />
+    <Content Include="Diagrams\images\197.png" />
+    <Content Include="Diagrams\images\198.png" />
+    <Content Include="Diagrams\images\199.png" />
+    <Content Include="Diagrams\images\2.png" />
+    <Content Include="Diagrams\images\20.png" />
+    <Content Include="Diagrams\images\200.png" />
+    <Content Include="Diagrams\images\201.png" />
+    <Content Include="Diagrams\images\202.png" />
+    <Content Include="Diagrams\images\203.png" />
+    <Content Include="Diagrams\images\204.png" />
+    <Content Include="Diagrams\images\205.png" />
+    <Content Include="Diagrams\images\206.png" />
+    <Content Include="Diagrams\images\207.png" />
+    <Content Include="Diagrams\images\208.png" />
+    <Content Include="Diagrams\images\209.png" />
+    <Content Include="Diagrams\images\21.png" />
+    <Content Include="Diagrams\images\210.png" />
+    <Content Include="Diagrams\images\211.png" />
+    <Content Include="Diagrams\images\212.png" />
+    <Content Include="Diagrams\images\213.png" />
+    <Content Include="Diagrams\images\214.png" />
+    <Content Include="Diagrams\images\215.png" />
+    <Content Include="Diagrams\images\216.png" />
+    <Content Include="Diagrams\images\217.png" />
+    <Content Include="Diagrams\images\218.png" />
+    <Content Include="Diagrams\images\219.png" />
+    <Content Include="Diagrams\images\22.png" />
+    <Content Include="Diagrams\images\220.png" />
+    <Content Include="Diagrams\images\221.png" />
+    <Content Include="Diagrams\images\222.png" />
+    <Content Include="Diagrams\images\223.png" />
+    <Content Include="Diagrams\images\224.png" />
+    <Content Include="Diagrams\images\225.png" />
+    <Content Include="Diagrams\images\226.png" />
+    <Content Include="Diagrams\images\227.png" />
+    <Content Include="Diagrams\images\228.png" />
+    <Content Include="Diagrams\images\229.png" />
+    <Content Include="Diagrams\images\23.png" />
+    <Content Include="Diagrams\images\230.png" />
+    <Content Include="Diagrams\images\231.png" />
+    <Content Include="Diagrams\images\232.png" />
+    <Content Include="Diagrams\images\233.png" />
+    <Content Include="Diagrams\images\234.png" />
+    <Content Include="Diagrams\images\235.png" />
+    <Content Include="Diagrams\images\236.png" />
+    <Content Include="Diagrams\images\237.png" />
+    <Content Include="Diagrams\images\238.png" />
+    <Content Include="Diagrams\images\239.png" />
+    <Content Include="Diagrams\images\24.png" />
+    <Content Include="Diagrams\images\240.png" />
+    <Content Include="Diagrams\images\241.png" />
+    <Content Include="Diagrams\images\242.png" />
+    <Content Include="Diagrams\images\243.png" />
+    <Content Include="Diagrams\images\244.png" />
+    <Content Include="Diagrams\images\245.png" />
+    <Content Include="Diagrams\images\246.png" />
+    <Content Include="Diagrams\images\247.png" />
+    <Content Include="Diagrams\images\248.png" />
+    <Content Include="Diagrams\images\249.png" />
+    <Content Include="Diagrams\images\25.png" />
+    <Content Include="Diagrams\images\250.png" />
+    <Content Include="Diagrams\images\251.png" />
+    <Content Include="Diagrams\images\252.png" />
+    <Content Include="Diagrams\images\253.png" />
+    <Content Include="Diagrams\images\254.png" />
+    <Content Include="Diagrams\images\255.png" />
+    <Content Include="Diagrams\images\256.png" />
+    <Content Include="Diagrams\images\257.png" />
+    <Content Include="Diagrams\images\258.png" />
+    <Content Include="Diagrams\images\259.png" />
+    <Content Include="Diagrams\images\26.png" />
+    <Content Include="Diagrams\images\260.png" />
+    <Content Include="Diagrams\images\261.png" />
+    <Content Include="Diagrams\images\262.png" />
+    <Content Include="Diagrams\images\263.png" />
+    <Content Include="Diagrams\images\264.png" />
+    <Content Include="Diagrams\images\265.png" />
+    <Content Include="Diagrams\images\266.png" />
+    <Content Include="Diagrams\images\267.png" />
+    <Content Include="Diagrams\images\268.png" />
+    <Content Include="Diagrams\images\269.png" />
+    <Content Include="Diagrams\images\27.png" />
+    <Content Include="Diagrams\images\270.png" />
+    <Content Include="Diagrams\images\271.png" />
+    <Content Include="Diagrams\images\272.png" />
+    <Content Include="Diagrams\images\273.png" />
+    <Content Include="Diagrams\images\274.png" />
+    <Content Include="Diagrams\images\275.png" />
+    <Content Include="Diagrams\images\276.png" />
+    <Content Include="Diagrams\images\277.png" />
+    <Content Include="Diagrams\images\278.png" />
+    <Content Include="Diagrams\images\279.png" />
+    <Content Include="Diagrams\images\28.png" />
+    <Content Include="Diagrams\images\280.png" />
+    <Content Include="Diagrams\images\281.png" />
+    <Content Include="Diagrams\images\282.png" />
+    <Content Include="Diagrams\images\283.png" />
+    <Content Include="Diagrams\images\284.png" />
+    <Content Include="Diagrams\images\285.png" />
+    <Content Include="Diagrams\images\286.png" />
+    <Content Include="Diagrams\images\287.png" />
+    <Content Include="Diagrams\images\288.png" />
+    <Content Include="Diagrams\images\289.png" />
+    <Content Include="Diagrams\images\29.png" />
+    <Content Include="Diagrams\images\290.png" />
+    <Content Include="Diagrams\images\291.png" />
+    <Content Include="Diagrams\images\292.png" />
+    <Content Include="Diagrams\images\293.png" />
+    <Content Include="Diagrams\images\294.png" />
+    <Content Include="Diagrams\images\295.png" />
+    <Content Include="Diagrams\images\296.png" />
+    <Content Include="Diagrams\images\297.png" />
+    <Content Include="Diagrams\images\298.png" />
+    <Content Include="Diagrams\images\299.png" />
+    <Content Include="Diagrams\images\3.png" />
+    <Content Include="Diagrams\images\30.png" />
+    <Content Include="Diagrams\images\300.png" />
+    <Content Include="Diagrams\images\301.png" />
+    <Content Include="Diagrams\images\302.png" />
+    <Content Include="Diagrams\images\303.png" />
+    <Content Include="Diagrams\images\304.png" />
+    <Content Include="Diagrams\images\305.png" />
+    <Content Include="Diagrams\images\306.png" />
+    <Content Include="Diagrams\images\307.png" />
+    <Content Include="Diagrams\images\308.png" />
+    <Content Include="Diagrams\images\309.png" />
+    <Content Include="Diagrams\images\31.png" />
+    <Content Include="Diagrams\images\310.png" />
+    <Content Include="Diagrams\images\311.png" />
+    <Content Include="Diagrams\images\312.png" />
+    <Content Include="Diagrams\images\313.png" />
+    <Content Include="Diagrams\images\314.png" />
+    <Content Include="Diagrams\images\315.png" />
+    <Content Include="Diagrams\images\316.png" />
+    <Content Include="Diagrams\images\317.png" />
+    <Content Include="Diagrams\images\318.png" />
+    <Content Include="Diagrams\images\319.png" />
+    <Content Include="Diagrams\images\32.png" />
+    <Content Include="Diagrams\images\320.png" />
+    <Content Include="Diagrams\images\321.png" />
+    <Content Include="Diagrams\images\322.png" />
+    <Content Include="Diagrams\images\323.png" />
+    <Content Include="Diagrams\images\324.png" />
+    <Content Include="Diagrams\images\325.png" />
+    <Content Include="Diagrams\images\326.png" />
+    <Content Include="Diagrams\images\327.png" />
+    <Content Include="Diagrams\images\328.png" />
+    <Content Include="Diagrams\images\329.png" />
+    <Content Include="Diagrams\images\33.png" />
+    <Content Include="Diagrams\images\330.png" />
+    <Content Include="Diagrams\images\331.png" />
+    <Content Include="Diagrams\images\332.png" />
+    <Content Include="Diagrams\images\333.png" />
+    <Content Include="Diagrams\images\334.png" />
+    <Content Include="Diagrams\images\34.png" />
+    <Content Include="Diagrams\images\35.png" />
+    <Content Include="Diagrams\images\36.png" />
+    <Content Include="Diagrams\images\37.png" />
+    <Content Include="Diagrams\images\38.png" />
+    <Content Include="Diagrams\images\39.png" />
+    <Content Include="Diagrams\images\4.png" />
+    <Content Include="Diagrams\images\40.png" />
+    <Content Include="Diagrams\images\41.png" />
+    <Content Include="Diagrams\images\42.png" />
+    <Content Include="Diagrams\images\43.png" />
+    <Content Include="Diagrams\images\44.png" />
+    <Content Include="Diagrams\images\45.png" />
+    <Content Include="Diagrams\images\46.png" />
+    <Content Include="Diagrams\images\47.png" />
+    <Content Include="Diagrams\images\48.png" />
+    <Content Include="Diagrams\images\49.png" />
+    <Content Include="Diagrams\images\5.png" />
+    <Content Include="Diagrams\images\50.png" />
+    <Content Include="Diagrams\images\51.png" />
+    <Content Include="Diagrams\images\52.png" />
+    <Content Include="Diagrams\images\53.png" />
+    <Content Include="Diagrams\images\54.png" />
+    <Content Include="Diagrams\images\55.png" />
+    <Content Include="Diagrams\images\56.png" />
+    <Content Include="Diagrams\images\57.png" />
+    <Content Include="Diagrams\images\58.png" />
+    <Content Include="Diagrams\images\59.png" />
+    <Content Include="Diagrams\images\6.png" />
+    <Content Include="Diagrams\images\60.png" />
+    <Content Include="Diagrams\images\61.png" />
+    <Content Include="Diagrams\images\62.png" />
+    <Content Include="Diagrams\images\63.png" />
+    <Content Include="Diagrams\images\64.png" />
+    <Content Include="Diagrams\images\65.png" />
+    <Content Include="Diagrams\images\66.png" />
+    <Content Include="Diagrams\images\67.png" />
+    <Content Include="Diagrams\images\68.png" />
+    <Content Include="Diagrams\images\69.png" />
+    <Content Include="Diagrams\images\7.png" />
+    <Content Include="Diagrams\images\70.png" />
+    <Content Include="Diagrams\images\71.png" />
+    <Content Include="Diagrams\images\72.png" />
+    <Content Include="Diagrams\images\73.png" />
+    <Content Include="Diagrams\images\74.png" />
+    <Content Include="Diagrams\images\75.png" />
+    <Content Include="Diagrams\images\76.png" />
+    <Content Include="Diagrams\images\77.png" />
+    <Content Include="Diagrams\images\78.png" />
+    <Content Include="Diagrams\images\79.png" />
+    <Content Include="Diagrams\images\8.png" />
+    <Content Include="Diagrams\images\80.png" />
+    <Content Include="Diagrams\images\81.png" />
+    <Content Include="Diagrams\images\82.png" />
+    <Content Include="Diagrams\images\83.png" />
+    <Content Include="Diagrams\images\84.png" />
+    <Content Include="Diagrams\images\85.png" />
+    <Content Include="Diagrams\images\86.png" />
+    <Content Include="Diagrams\images\87.png" />
+    <Content Include="Diagrams\images\88.png" />
+    <Content Include="Diagrams\images\89.png" />
+    <Content Include="Diagrams\images\9.png" />
+    <Content Include="Diagrams\images\90.png" />
+    <Content Include="Diagrams\images\91.png" />
+    <Content Include="Diagrams\images\92.png" />
+    <Content Include="Diagrams\images\93.png" />
+    <Content Include="Diagrams\images\94.png" />
+    <Content Include="Diagrams\images\95.png" />
+    <Content Include="Diagrams\images\96.png" />
+    <Content Include="Diagrams\images\97.png" />
+    <Content Include="Diagrams\images\98.png" />
+    <Content Include="Diagrams\images\99.png" />
+    <Content Include="Diagrams\images\ea.gif" />
+    <Content Include="Diagrams\images\hbg.gif" />
+    <Content Include="Diagrams\images\join01.gif" />
+    <Content Include="Diagrams\images\join02.gif" />
+    <Content Include="Diagrams\images\join03.gif" />
+    <Content Include="Diagrams\images\join04.gif" />
+    <Content Include="Diagrams\images\minus01.gif" />
+    <Content Include="Diagrams\images\minus02.gif" />
+    <Content Include="Diagrams\images\minus03.gif" />
+    <Content Include="Diagrams\images\plus01.gif" />
+    <Content Include="Diagrams\images\plus02.gif" />
+    <Content Include="Diagrams\images\plus03.gif" />
+    <Content Include="Diagrams\index.htm" />
+    <Content Include="Diagrams\js\data\08055085-A977-454d-8342-8A4A43B3925A.xml" />
+    <Content Include="Diagrams\js\data\27CABD02-A51B-45c7-9AB5-79E4C4E8C304.xml" />
+    <Content Include="Diagrams\js\data\33EB798A-4DED-4b56-B7D5-93ABB0F38571.xml" />
+    <Content Include="Diagrams\js\data\407188F4-0113-429e-9E24-295A1EB49978.xml" />
+    <Content Include="Diagrams\js\data\43D2DB23-D828-459b-84A0-64550046CA06.xml" />
+    <Content Include="Diagrams\js\data\43DAC786-50D5-46f4-A73A-909FACB01E80.xml" />
+    <Content Include="Diagrams\js\data\5764C57F-019D-42c3-A3D4-550D6CAD0B42.xml" />
+    <Content Include="Diagrams\js\data\66BA84FC-199D-46a2-AB59-7093E13AC45D.xml" />
+    <Content Include="Diagrams\js\data\7E635A71-BE03-4420-8038-2B215046E6B3.xml" />
+    <Content Include="Diagrams\js\data\7FA13C9F-98D0-42a9-9357-4857E5B8852E.xml" />
+    <Content Include="Diagrams\js\data\810B85F9-0658-41b8-B15F-38C08B8FEF52.xml" />
+    <Content Include="Diagrams\js\data\8EB38571-673F-4a84-83F2-39B983FB5745.xml" />
+    <Content Include="Diagrams\js\data\A3630B0A-E1ED-4900-8F0F-38C9B4F3AAC7.xml" />
+    <Content Include="Diagrams\js\data\A8A5DEFE-954B-42f4-919F-A5D21F4DAE29.xml" />
+    <Content Include="Diagrams\js\data\C0881B94-5B43-43bf-A706-9975CF369F18.xml" />
+    <Content Include="Diagrams\js\data\C7386135-A56E-44e5-9401-68E59432990C.xml" />
+    <Content Include="Diagrams\js\data\CA89F870-D13C-466a-904E-D4EDE5466210.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap05.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap07.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap08.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap0a.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap0b.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap0d.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap0e.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap11.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap12.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap16.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap1d.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap27.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap28.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap2e.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap33.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap37.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap38.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap3d.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap3f.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap40.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap41.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap43.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap47.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap48.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap4a.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap4b.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap4c.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap50.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap54.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap57.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap5d.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap62.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap66.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap69.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap73.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap74.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap77.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap7b.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap7e.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap7f.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap80.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap81.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap84.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap88.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap8b.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap8e.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap8f.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap90.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap92.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap95.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap98.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMap9a.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMapa1.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMapa3.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMapa8.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMapaa.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMapad.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMapaf.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMapb3.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMapb4.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMapb6.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMapb8.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMapb9.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMapbb.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMapbc.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMapbd.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMapbf.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMapc0.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMapc2.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMapc3.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMapc4.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMapc6.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMapc7.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMapca.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMapcd.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMapd8.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMapdc.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMape7.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMape9.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMapeb.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMapec.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMapee.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMapf0.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMapf4.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMapfc.xml" />
+    <Content Include="Diagrams\js\data\guidmaps\GuidMapfd.xml" />
+    <Content Include="Diagrams\js\data\root.xml" />
+    <Content Include="Diagrams\js\displayToc.js" />
+    <Content Include="Diagrams\toc.htm" />
+    <Content Include="Global.asax" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Light.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Main.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Root.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\gvallejotest.engineering.com.mx.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Diagrams.aspx.cs">
+      <DependentUpon>Diagrams.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Diagrams.aspx.designer.cs">
+      <DependentUpon>Diagrams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Log\LogSession.cs" />
+    <Compile Include="Misc\CustomEvents.cs" />
+    <Compile Include="Misc\CustomResources.cs" />
+    <Compile Include="Misc\SchedulerDemoUtils.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DependencyInjection\DependencyResolver.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\UIHelper.cs" />
+    <Compile Include="Light.master.cs">
+      <DependentUpon>Light.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Light.master.designer.cs">
+      <DependentUpon>Light.master</DependentUpon>
+    </Compile>
+    <Compile Include="Main.master.cs">
+      <DependentUpon>Main.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.master.designer.cs">
+      <DependentUpon>Main.master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Root.master.cs">
+      <DependentUpon>Root.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Root.master.designer.cs">
+      <DependentUpon>Root.master</DependentUpon>
+    </Compile>
+    <Compile Include="_Default.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IoC\IoC.csproj">
+      <Project>{20117997-eba2-4ac7-8514-254c2a01251a}</Project>
+      <Name>IoC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Scheduler.Core\Scheduler.Core.csproj">
+      <Project>{f5d2f892-aed0-4658-86cf-9b000604eeff}</Project>
+      <Name>Scheduler.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Code\" />
+    <Folder Include="Diagrams\files\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52724</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52724/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

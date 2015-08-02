@@ -1,0 +1,7 @@
+tocTab[tocTab.length] = new Array("0.1.1:1", "", "Assessors", "EARoot/EA1/EA1/EA40.htm", "3.png", "3", "0", "", "Logical diagram0","{FC89ADDD-1CB7-4701-B94E-C4CC164E7291}");
+tocTab[tocTab.length] = new Array("0.1.1:2", "", "AssessorArgs", "EARoot/EA1/EA1/EA43.htm", "5.png", "E5", "0", "", "Class0","{C6714858-B76B-4d68-92A8-C395B70B30B4}");
+tocTab[tocTab.length] = new Array("0.1.1:3", "", "«entity» EmployeesInShiftAssessor", "EARoot/EA1/EA1/EA44.htm", "5.png", "E6", "0", "", "Class0","{814B7415-4B6F-41da-83DC-639AF1B05BCF}");
+tocTab[tocTab.length] = new Array("0.1.1:4", "", "«entity» EmployeeTimeOffAssessor", "EARoot/EA1/EA1/EA45.htm", "5.png", "E7", "0", "", "Class0","{DCA16F59-329A-4864-BFC2-1913AA7D4DAF}");
+tocTab[tocTab.length] = new Array("0.1.1:5", "", "«entity» MaxShiftsPerEmployeeInWeekAssessor", "EARoot/EA1/EA1/EA46.htm", "5.png", "E8", "0", "", "Class0","{2E5FC9CA-091A-4b69-809C-F77637634B1F}");
+tocTab[tocTab.length] = new Array("0.1.1:6", "", "«entity» MinShiftsPerEmployeeInWeekAssessor", "EARoot/EA1/EA1/EA47.htm", "5.png", "E9", "0", "", "Class0","{D8EBE95C-B3B2-4971-94DB-DD507E06561F}");
+tocTab[tocTab.length] = new Array("0.1.1:7", "", "ShiftsPerEmployeeInWeekAssessor", "EARoot/EA1/EA1/EA48.htm", "5.png", "E10", "0", "", "Class0","{7B114AB7-073A-44d1-99D6-4E77711C55C4}");

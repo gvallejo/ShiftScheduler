@@ -1,0 +1,2 @@
+tocTab[tocTab.length] = new Array("0.3.2:1", "", "Mocked", "EARoot/EA3/EA2/EA76.htm", "3.png", "8", "0", "", "Logical diagram0","{E9ACDFA4-FD6A-4837-8770-2F064426781A}");
+tocTab[tocTab.length] = new Array("0.3.2:2", "", "MockedDataAccess", "EARoot/EA3/EA2/EA79.htm", "5.png", "E37", "0", "", "Class0","{3F918101-5634-4508-A6DE-442018A837F3}");

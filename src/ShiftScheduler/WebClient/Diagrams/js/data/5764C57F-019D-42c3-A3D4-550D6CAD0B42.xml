@@ -1,0 +1,10 @@
+tocTab[tocTab.length] = new Array("0.4:1", "", "Entities", "EARoot/EA4/EA80.htm", "3.png", "9", "0", "", "Logical diagram0","{B6F1F80E-F04C-4232-84CA-F6776A02E146}");
+tocTab[tocTab.length] = new Array("0.4:2", "", "DTimeOffRequest", "EARoot/EA4/EA84.htm", "5.png", "E49", "0", "", "Class0","{28C33916-0C87-4565-8980-4D5D485B207A}");
+tocTab[tocTab.length] = new Array("0.4:3", "", "Employee", "EARoot/EA4/EA85.htm", "5.png", "E50", "0", "", "Class0","{48A1B6FC-00E8-4717-B77F-DA74992FF695}");
+tocTab[tocTab.length] = new Array("0.4:4", "", "EmployeeSchedule", "EARoot/EA4/EA86.htm", "5.png", "E51", "0", "", "Class0","{54501942-4DD3-41db-A018-2C67D66F47A7}");
+tocTab[tocTab.length] = new Array("0.4:5", "", "IWeekEmployeeScheduleItem", "EARoot/EA4/EA87.htm", "8.png", "E52", "0", "", "Interface0","{471F9493-B776-4301-9AB3-C5A60C367A39}");
+tocTab[tocTab.length] = new Array("0.4:6", "", "ShiftRuleDefinition", "EARoot/EA4/EA88.htm", "5.png", "E53", "0", "", "Class0","{B9B7C72D-8E97-4b97-A8A3-C0E59B013129}");
+tocTab[tocTab.length] = new Array("0.4:7", "", "ShiftRuleValue", "EARoot/EA4/EA89.htm", "5.png", "E54", "0", "", "Class0","{1D39885C-8231-489d-B54D-6E710E5094A4}");
+tocTab[tocTab.length] = new Array("0.4:8", "", "ShiftSchedule", "EARoot/EA4/EA90.htm", "5.png", "E55", "0", "", "Class0","{08CDE687-403A-4578-B0C2-C688A422B4AB}");
+tocTab[tocTab.length] = new Array("0.4:9", "", "ShiftScheduleItem", "EARoot/EA4/EA91.htm", "5.png", "E56", "0", "", "Class0","{120293DB-1491-4837-9C9C-D7BD2EB58D23}");
+tocTab[tocTab.length] = new Array("0.4.1", "1", "Business", "EARoot/EA4/EA1/EA94.htm", "4.png", "", "", "{810B85F9-0658-41b8-B15F-38C08B8FEF52}", "Package");

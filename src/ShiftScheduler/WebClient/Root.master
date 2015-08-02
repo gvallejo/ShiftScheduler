@@ -1,0 +1,82 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Root.master.cs" Inherits="WebClient.RootMaster" %>
+
+<%@ Register Assembly="DevExpress.Web.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxEditors" TagPrefix="dx" %>
+<%@ Register Assembly="DevExpress.Web.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxSplitter" TagPrefix="dx" %>
+<%@ Register Assembly="DevExpress.Web.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxMenu" TagPrefix="dx" %>
+
+<%-- DXCOMMENT: Page Root.master is a master page that contains the root layout (it includes Header, Cental Area, and Footer) --%>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="Content/Site.css" />
+</head>
+<body runat="server" id="Body">
+    <form id="form1" runat="server">
+    <dx:ASPxSplitter ID="ASPxSplitter1" runat="server" AllowResize="False" Orientation="Vertical"
+        FullscreenMode="True" SeparatorVisible="False" Height="100%" Width="100%">
+        <Styles>
+            <Pane>
+                <Paddings Padding="0px" />
+                <Border BorderWidth="0px" />
+            </Pane>
+        </Styles>
+        <Panes>
+            <dx:SplitterPane Name="Header" Size="83px" MinSize="83px">
+                <PaneStyle CssClass="headerPane">
+                    <BorderBottom BorderWidth="1px" />
+                </PaneStyle>
+                <ContentCollection>
+                    <dx:SplitterContentControl ID="SplitterContentControl1" runat="server">
+                        <div class="headerTop">
+                            <div class="templateTitle">
+                                <a id="TitleLink" href="~/" runat="server">Scheduler Demo</a>
+                            </div>
+                        </div>
+                        <div class="headerMenu">
+                            <%-- DXCOMMENT: Configure the header menu --%>
+<dx:ASPxMenu ID="ASPxMenu1" runat="server" ItemAutoWidth="False" Width="100%">
+    <Items>
+        <dx:MenuItem Text="Scheduler"></dx:MenuItem>
+        <dx:MenuItem Text="Components Diagram" NavigateUrl="Diagrams/index.htm"></dx:MenuItem>
+        
+    </Items>
+    <Border BorderWidth="0px" />
+    <Paddings Padding="0px" />
+</dx:ASPxMenu>
+                        </div>
+                    </dx:SplitterContentControl>
+                </ContentCollection>
+            </dx:SplitterPane>
+            <dx:SplitterPane Name="Content" MinSize="375px">
+                <PaneStyle CssClass="mainContentPane"></PaneStyle>
+                <ContentCollection>
+                    <dx:SplitterContentControl ID="SplitterContentControl3" runat="server">
+                        <asp:ContentPlaceHolder ID="Content" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </dx:SplitterContentControl>
+                </ContentCollection>
+                <PaneStyle BackColor="white">
+                    <BorderBottom BorderWidth="1px" />
+                </PaneStyle>
+            </dx:SplitterPane>
+
+           <%-- <dx:SplitterPane Name="Footer" Size="125px" PaneStyle-CssClass="footerPane">--%>
+             <dx:SplitterPane Name="Footer" Size="5%" PaneStyle-CssClass="footerPane">
+                <ContentCollection>
+                    <dx:SplitterContentControl ID="SplitterContentControl4" runat="server">
+                        <div class="footerMenu">
+                            
+                        </div>
+                        <div class="copyright">
+                            <dx:ASPxLabel ID="ASPxLabel2" Tex="by Gerry Vallejo gvallejor@gmail.com" runat="server">
+                            </dx:ASPxLabel>
+                        </div>
+                    </dx:SplitterContentControl>
+                </ContentCollection>
+            </dx:SplitterPane>
+        </Panes>
+    </dx:ASPxSplitter>
+    </form>
+</body>
+</html>

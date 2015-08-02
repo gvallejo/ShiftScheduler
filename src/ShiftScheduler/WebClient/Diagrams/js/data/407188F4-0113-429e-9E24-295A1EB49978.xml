@@ -1,0 +1,14 @@
+tocTab[tocTab.length] = new Array("0.1:1", "", "BusinessRules", "EARoot/EA1/EA24.htm", "3.png", "2", "0", "", "Logical diagram0","{EE66C6E7-5DF1-4071-9022-BD59FBC9736A}");
+tocTab[tocTab.length] = new Array("0.1:2", "", "ConstraintType", "EARoot/EA1/EA28.htm", "247.png", "E16", "0", "", "Enumeration0","{955D7437-3CC0-4cd8-ADED-F78799A53DD5}");
+tocTab[tocTab.length] = new Array("0.1:3", "", "IAssessor", "EARoot/EA1/EA29.htm", "8.png", "E17", "0", "", "Interface0","{7B6A523C-8C94-4e53-A63D-DF5ECCFBF367}");
+tocTab[tocTab.length] = new Array("0.1:4", "", "IShiftRule", "EARoot/EA1/EA30.htm", "8.png", "E18", "0", "", "Interface0","{4A997375-C0AE-418e-8636-8DB4616C1C2E}");
+tocTab[tocTab.length] = new Array("0.1:5", "", "IShiftRuleFactory", "EARoot/EA1/EA31.htm", "8.png", "E19", "0", "", "Interface0","{8414C31E-F091-4743-92D9-D1695BEF071F}");
+tocTab[tocTab.length] = new Array("0.1:6", "", "RuleType", "EARoot/EA1/EA33.htm", "247.png", "E20", "0", "", "Enumeration0","{EC468784-F4DC-40fb-9E04-5B000A9CD793}");
+tocTab[tocTab.length] = new Array("0.1:7", "", "«Abstract Calss» ShiftRule", "EARoot/EA1/EA34.htm", "5.png", "E21", "0", "", "Class0","{E7CC4D6B-44D4-46b7-80F8-6F6B46082A01}");
+tocTab[tocTab.length] = new Array("0.1:8", "", "ShiftRuleCollection", "EARoot/EA1/EA35.htm", "5.png", "E22", "0", "", "Class0","{62113DB3-3631-4139-96B7-94314292560B}");
+tocTab[tocTab.length] = new Array("0.1:9", "", "ShiftRuleExtensions", "EARoot/EA1/EA36.htm", "5.png", "E23", "0", "", "Class0","{980596AD-D9E5-4c81-A041-DBAC689D6269}");
+tocTab[tocTab.length] = new Array("0.1:10", "", "ShiftRuleFactory", "EARoot/EA1/EA37.htm", "5.png", "E24", "0", "", "Class0","{8472C652-DA37-4601-85A8-D726E842EFDA}");
+tocTab[tocTab.length] = new Array("0.1:11", "", "IAssessor: IAssessor", "EARoot/EA1/EA38.htm", "111.png", "E83", "E21", "", "RequiredInterface0","{AFE6A011-26A7-4858-A6B3-34009788917B}");
+tocTab[tocTab.length] = new Array("0.1:12", "", "IShiftRuleFactory: IShiftRuleFactory", "EARoot/EA1/EA39.htm", "112.png", "E85", "E24", "", "ProvidedInterface0","{4BD66CBA-5964-4fc8-9D01-F6D6769D222F}");
+tocTab[tocTab.length] = new Array("0.1.1", "1", "Assessors", "EARoot/EA1/EA1/EA42.htm", "4.png", "", "", "{08055085-A977-454d-8342-8A4A43B3925A}", "Package");
+tocTab[tocTab.length] = new Array("0.1.2", "1", "Rules", "EARoot/EA1/EA2/EA51.htm", "4.png", "", "", "{8EB38571-673F-4a84-83F2-39B983FB5745}", "Package");

@@ -1,0 +1,5 @@
+tocTab[tocTab.length] = new Array("0.1.2:1", "", "Rules", "EARoot/EA1/EA2/EA49.htm", "3.png", "4", "0", "", "Logical diagram0","{B35B3B0D-2F29-4b6b-9AE9-3C559B3F7162}");
+tocTab[tocTab.length] = new Array("0.1.2:2", "", "«entity» MaxEmployeeShiftsPerWeekRule", "EARoot/EA1/EA2/EA52.htm", "5.png", "E12", "0", "", "Class0","{8FD18758-13D8-44dc-8415-6B596D416D8A}");
+tocTab[tocTab.length] = new Array("0.1.2:3", "", "«Concrete Implementation» MinEmployeeShiftsPerWeekRule", "EARoot/EA1/EA2/EA53.htm", "5.png", "E13", "0", "", "Class0","{B8C439B1-98EA-4a83-914D-22412FA85F0B}");
+tocTab[tocTab.length] = new Array("0.1.2:4", "", "«Concrete Implementation» MinEmployeesPerShiftRule", "EARoot/EA1/EA2/EA54.htm", "5.png", "E14", "0", "", "Class0","{0A19E612-BDFB-4c29-90EC-F095E7BD7A84}");
+tocTab[tocTab.length] = new Array("0.1.2:5", "", "«Concrete Implementation» TimeOffRequestRule", "EARoot/EA1/EA2/EA55.htm", "5.png", "E15", "0", "", "Class0","{38D6F427-D242-4741-8870-9C612BEA6D80}");

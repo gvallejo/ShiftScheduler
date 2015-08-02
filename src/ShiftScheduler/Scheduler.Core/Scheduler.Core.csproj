@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F5D2F892-AED0-4658-86CF-9B000604EEFF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Scheduler.Core</RootNamespace>
+    <AssemblyName>Scheduler.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Gurock.SmartInspect">
+      <HintPath>..\..\..\libs\SmartInspect\Gurock.SmartInspect.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessRules\Assessors\AssessorArgs.cs" />
+    <Compile Include="BusinessRules\Assessors\EmployeeTimeOffAssessor.cs" />
+    <Compile Include="BusinessRules\Assessors\EmployeesInShiftAssessor.cs" />
+    <Compile Include="BusinessRules\Assessors\MaxShiftsPerEmployeeInWeekAssessor.cs" />
+    <Compile Include="BusinessRules\Assessors\MinShiftsPerEmployeeInWeekAssessor.cs" />
+    <Compile Include="BusinessRules\Assessors\ShiftsPerEmployeeInWeekAssessor.cs" />
+    <Compile Include="BusinessRules\ConstraintType.cs" />
+    <Compile Include="BusinessRules\IAssessor.cs" />
+    <Compile Include="BusinessRules\Rules\MaxEmployeeShiftsPerWeekRule.cs" />
+    <Compile Include="BusinessRules\Rules\MinEmployeeShiftsPerWeekRule.cs" />
+    <Compile Include="BusinessRules\Rules\MinEmployeesPerShiftRule.cs" />
+    <Compile Include="BusinessRules\IShiftRule.cs" />
+    <Compile Include="BusinessRules\IShiftRuleFactory.cs" />
+    <Compile Include="BusinessRules\RuleType.cs" />
+    <Compile Include="BusinessRules\ShiftRule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessRules\ShiftRuleCollection.cs" />
+    <Compile Include="BusinessRules\ShiftRuleExtensions.cs" />
+    <Compile Include="BusinessRules\ShiftRuleFactory.cs" />
+    <Compile Include="BusinessRules\Rules\TimeOffRequestRule.cs" />
+    <Compile Include="Config\RuleIdMapItem.cs" />
+    <Compile Include="Config\RuleIdToRuleTypeMapper.cs" />
+    <Compile Include="DataAccess\IDataAccess.cs" />
+    <Compile Include="DataAccess\Json\HttpWebRequestJsonInputLoader.cs" />
+    <Compile Include="DataAccess\Json\IJsonInputLoader.cs" />
+    <Compile Include="DataAccess\Json\IJsonSerializer.cs" />
+    <Compile Include="DataAccess\Json\JsonDataAccess.cs" />
+    <Compile Include="DataAccess\Json\JsonNetSerializer.cs" />
+    <Compile Include="DataAccess\Mocked\MockedDataAccess.cs" />
+    <Compile Include="Entities\Business\Employees.cs" />
+    <Compile Include="Entities\Business\Shift.cs" />
+    <Compile Include="Entities\Business\Shifts.cs" />
+    <Compile Include="Entities\Business\TimeOffRequest.cs" />
+    <Compile Include="Entities\Business\Week.cs" />
+    <Compile Include="Entities\Business\Weeks.cs" />
+    <Compile Include="Entities\Business\WorkingDay.cs" />
+    <Compile Include="Entities\Business\WorkingDays.cs" />
+    <Compile Include="Entities\DTimeOffRequest.cs" />
+    <Compile Include="Entities\Employee.cs" />
+    <Compile Include="Entities\EmployeeSchedule.cs" />
+    <Compile Include="Entities\IWeekEmployeeScheduleItem.cs" />
+    <Compile Include="Entities\ShiftRuleDefinition.cs" />
+    <Compile Include="Entities\ShiftRuleValue.cs" />
+    <Compile Include="Entities\ShiftSchedule.cs" />
+    <Compile Include="Entities\ShiftScheduleItem.cs" />
+    <Compile Include="Log\LogSession.cs" />
+    <Compile Include="Persistance\IShiftScheduleRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Scheduling\BruteForceAlgorithm.cs" />
+    <Compile Include="Scheduling\DummyAlgorithm.cs" />
+    <Compile Include="Scheduling\IScheduler.cs" />
+    <Compile Include="Scheduling\ISchedulingAlgorithm.cs" />
+    <Compile Include="Scheduling\ISchedulingAlgorithmFactory.cs" />
+    <Compile Include="Scheduling\RandomGenerator.cs" />
+    <Compile Include="Scheduling\Scheduler.cs" />
+    <Compile Include="Scheduling\SchedulingAlgorithmFactory.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Validation\IShiftScheduleValidator.cs" />
+    <Compile Include="Validation\ShiftScheduleValidator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

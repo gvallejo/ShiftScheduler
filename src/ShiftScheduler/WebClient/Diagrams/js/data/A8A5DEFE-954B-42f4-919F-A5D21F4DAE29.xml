@@ -1,0 +1,6 @@
+tocTab[tocTab.length] = new Array("0.10:1", "", "Validation", "EARoot/EA10/EA135.htm", "3.png", "17", "0", "", "Logical diagram0","{EB3D5AA7-7EE1-46c3-B003-B9EC043B87E4}");
+tocTab[tocTab.length] = new Array("0.10:2", "", "IShiftScheduleValidator", "EARoot/EA10/EA138.htm", "8.png", "E77", "0", "", "Interface0","{27770C94-ED1B-4c68-80DA-D4808ABBF1BE}");
+tocTab[tocTab.length] = new Array("0.10:3", "", "IValidatable", "EARoot/EA10/EA139.htm", "8.png", "E78", "0", "", "Interface0","{CDDEE1E2-20AC-49b6-8FFE-CBB9608E2D33}");
+tocTab[tocTab.length] = new Array("0.10:4", "", "IWeekEmployeeScheduleItemValidator", "EARoot/EA10/EA140.htm", "8.png", "E79", "0", "", "Interface0","{927C418C-7A4B-4add-97CB-C90608692611}");
+tocTab[tocTab.length] = new Array("0.10:5", "", "ShiftScheduleValidator", "EARoot/EA10/EA141.htm", "5.png", "E80", "0", "", "Class0","{C23687F0-5B07-4e47-B033-793FEEE89AE7}");
+tocTab[tocTab.length] = new Array("0.10:6", "", "IShiftRuleFactory: IShiftRuleFactory", "EARoot/EA10/EA142.htm", "111.png", "E84", "E80", "", "RequiredInterface0","{73614393-2461-41b5-8992-283CFCB7C8FA}");
